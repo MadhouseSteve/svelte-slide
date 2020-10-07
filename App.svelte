@@ -6,6 +6,9 @@
 
     function addEntry() {
         entries.push({ unique_id: Date.now(), message: "HERE I AM" });
+        if (entries.length > 4) {
+            entries.shift();
+        }
         entries=entries;
     }
 </script>
